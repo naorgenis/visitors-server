@@ -56,10 +56,15 @@ const getPlacesByUserId = async (req, res, next) => {
 
 const createPlace = async (req, res, next) => {
   const errors = validationResult(req);
+  console.log(errors);
   if (!errors.isEmpty()) {
     return next(new HttpError("Invalid inputs, Please check your data", 422));
   }
   const { title, address, description } = req.body;
+  if (!req.file) {
+    const error = new HttpError("Please choose an image", 422);
+    return next(error);
+  }
 
   let coordinates;
   try {

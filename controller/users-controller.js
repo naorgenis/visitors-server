@@ -53,7 +53,6 @@ const signup = async (req, res, next) => {
     image: req.file.path,
     places: [],
   });
-  console.log(newUser);
 
   try {
     await newUser.save();

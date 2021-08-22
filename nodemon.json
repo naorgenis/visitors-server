@@ -1,9 +1,0 @@
-{
-  "env": {
-    "DB_USER": "naor",
-    "DB_PASSWORD": "hOo2Ee5WwcRZ4tIH",
-    "DB_NAME": "mern",
-    "GOOGLE_API_KEYS": "AIzaSyDhlW4LvsG9TXxkWREBQhPekN9SjYi5AXo",
-    "JWT_KEY": "secret_private_token"
-  }
-}
